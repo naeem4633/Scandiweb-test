@@ -1,9 +1,9 @@
 <?php
 
 define('SERVER', "localhost");
-define('USERNAME', 'root');
-define('PASSWORD', '');
-define('DATABASE', 'products');
+define('USERNAME', 'id18944185_naeem');
+define('PASSWORD', 'LT=2YBpJH~j&vC9t');
+define('DATABASE', 'id18944185_products');
 // $username = "id18944185_naeem";
 // $password = "LT=2YBpJH~j&vC9t";
 // $database = "id18944185_products";

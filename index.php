@@ -107,7 +107,7 @@
                 })
             }
         })
-        var src = "/TestTaskFinalFinal/index.php?delete=" + deleteArray;
+        var src = "index.php?delete=" + deleteArray;
         window.location.href = src;
     });
 </script>
