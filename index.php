@@ -17,11 +17,11 @@
         $sku = $_POST['sku'];
         $name = $_POST['name'];
         $price = $_POST['price'];
-        $weight = $_POST['weight'];
-        $size = $_POST['size'];
-        $height = $_POST['height'];
-        $width = $_POST['width'];
-        $length = $_POST['length'];
+        $weight = (!empty($_POST['weight'])) ? $_POST['weight'] : 0;
+        $size = (!empty($_POST['size'])) ? $_POST['size'] : 0;
+        $height = (!empty($_POST['height'])) ? $_POST['height'] : 0;
+        $width = (!empty($_POST['width'])) ? $_POST['width'] : 0;
+        $length = (!empty($_POST['length'])) ? $_POST['length'] : 0;
         $sql = $sql = "INSERT INTO `products` (`sku`, `name`, `price`, `size`, 
             `weight`, `height`, `width`, `length`) 
         VALUES ('$sku', '$name', '$price', '$size', '$weight', '$height', '$width', '$length')";
