@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{  
+    height: 75px; 
+    overflow: hidden;
+}
+.error{
+    outline: 1px solid red;
+}
+.heading{
+    font-size: 30px;
+    display: inline-block;
+    margin: 3vh 3vw;
+}
+#save-btn{
+    position: relative;
+    left: 68vw;
+    height: 30px;
+    width: 100px;
+}
+#cancel-btn{
+    position: relative;
+    left: 67vw;
+    height: 30px;
+    width: 100px;
+}
+#product_form{
+    height: calc(78vh);    
+    overflow: hidden;
+}
+.inputs{
+    display: inline-block;
+    margin: 20px 20px;
+    font-size: 20px;
+}
+#sku{
+    margin-left: 50px;
+}
+#name{
+    margin-left: 42px;
+}
+.switcher{
+    margin: 0 20px;
+    font-size: 18px;
+}
+#productType{
+    margin-left: 20px;
+    size: 100px;
+    height: 30px;
+    width: 135px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.dvdForm{
+    height: 250px;
+    width: 450px;
+    display: none;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.furnitureForm{
+    height: 250px;
+    width: 450px;
+    display: inline-block;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.bookForm{
+    height: 250px;
+    width: 450px;
+    display: none;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.description{
+    font-size: 20px;
+    margin: 20px 20px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 75px;
+    width: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+}
+.footer{
+    font-size: larger;   
+}

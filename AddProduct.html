@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="addProduct.css">
+</head>
+<header>
+    <p class="heading">Add Product</p>
+    <button id="cancel-btn">Cancel</button>
+    <button id="save-btn" type="submit" form = "product_form">Save</button>
+</header>
+
+<body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/addProductScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <hr>
+    <form action="index.php" method="post" id="product_form">
+        <label class="inputs" for="sku" >SKU</label>
+        <input class="inputs" type="text" id="sku" name="sku">
+        <br>
+        <label class="inputs" for="name" >Name</label>
+        <input class="inputs" type="text" id="name" name="name">
+        <br>
+        <label class="inputs" for="price" >Price ($)</label>
+        <input class="inputs" type="number" id="price" name="price">
+        <br><br><br>
+
+        <div class="switcher">
+            <label for="typeSwitcher">Type Switcher</label>
+
+            <select name="productType" id="productType">
+                <option value="" disabled selected hidden>Type Switcher</option>
+                <option value="dvd" id="DVD" onclick="displayDvdForm()">DVD</option>
+                <option value="furniture" id="Furniture" onclick="displayFurnitureForm()">Furniture</option>
+                <option value="book" id="Book" onclick="displayBookForm()">Book</option>
+            </select>
+        </div>
+
+        <div class="dvdForm">
+            <label class="inputs" for="size">Size (MB)</label>
+            <input class="inputs" type="number" id="size" name="size">
+            <p class="description">Please provide size in MB</p>
+        </div>
+
+        <div class="furnitureForm">
+            <label class="inputs" for="height">Height (CM)</label>
+            <input class="inputs" type="number" id="height" name="height">
+            <br>
+            <label class="inputs" for="width">Width (CM)</label>
+            <input class="inputs" type="number" id="width" name="width">
+            <br>
+            <label class="inputs" for="length">Length (CM)</label>
+            <input class="inputs" type="number" id="length" name="length">
+            <br>
+            <p class="description">Please provide dimensions in HxWxL format</p>
+        </div>
+        <div class="bookForm">
+            <label class="inputs" for="weight">Weight (KG)</label>
+            <input class="inputs" type="number" step="any" id="weight" name="weight">
+            <p class="description">Please provide weight in KG</p>
+        </div>
+        </div>
+    </form>
+    <hr>
+</body>
+
+<footer>
+    <p class="footer">Scandiweb Test Assignment</p>
+</footer>
+
+</html>

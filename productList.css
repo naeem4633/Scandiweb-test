@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{  
+    height: 75px; 
+    overflow: hidden;
+}
+.heading{
+    font-size: 30px;
+    display: inline-block;
+    margin: 3vh 3vw;
+}
+#delete-product-btn{
+    position: relative;
+    left: 68vw;
+    height: 30px;
+    width: 130px;
+}
+#add-product-btn{
+    position: relative;
+    left: 67vw;
+    height: 30px;
+    width: 80px;
+}
+.container{
+    height: 570px;  
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 180px;
+    border: 2px solid  black;
+    margin: 50px 50px;
+}
+.delete-checkbox{
+    position: relative;
+    right: 100px;
+}
+.item p{
+    padding: 3px 3px;
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 80px;
+    width: 100%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.footer{
+    font-size: larger;   
+}
