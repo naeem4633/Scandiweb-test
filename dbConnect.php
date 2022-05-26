@@ -1,12 +1,12 @@
 <?php
 
 define('SERVER', "localhost");
-define('USERNAME', 'id18944185_naeem');
-define('PASSWORD', 'LT=2YBpJH~j&vC9t');
-define('DATABASE', 'id18944185_products');
-// $username = "id18944185_naeem";
-// $password = "LT=2YBpJH~j&vC9t";
-// $database = "id18944185_products";
+define('USERNAME', 'id18996769_naeem');
+define('PASSWORD', 'Uy5-a)kK&f?z!ZHE');
+define('DATABASE', 'id18996769_products');
+// $username = "id18996769_naeem";
+// $password = "Uy5-a)kK&f?z!ZHE";
+// $database = "id18996769_products";
 
 class DbConnect{
     
