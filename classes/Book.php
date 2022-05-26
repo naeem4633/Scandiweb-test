@@ -9,12 +9,6 @@ class Book extends Item{
         $this->price = $price;
         $this->weight = $weight;
     }
-    function setWeight($weight){
-        $this->weight = $weight;
-    }
-    function getWeight(){
-        return $this->weight;
-    }
     function getAttributes(){
         return "$this->weight KG";
     }

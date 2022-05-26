@@ -10,12 +10,6 @@ class Dvd extends Item{
         $this->size = $size;
     }
 
-    function setSize($size){
-        $this->size = $size;
-    }
-    function getSize(){
-        return $this->size;
-    }
     function getAttributes(){
         return "$this->size MB";
     }

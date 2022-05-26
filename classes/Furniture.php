@@ -14,24 +14,6 @@ class Furniture extends Item{
         $this->height = $height;
     }
 
-    function setLength($length){
-        $this->length = $length;
-    }
-    function getLength(){
-        return $this->length;
-    }
-    function setWidth($width){
-        $this->width = $width;
-    }
-    function getWidth(){
-        return $this->width;
-    }
-    function setHeight($height){
-        $this->height = $height;
-    }
-    function getHeight(){
-        return $this->height;
-    }
     function getAttributes(){
         return "$this->height x $this->width x $this->length";
     }
