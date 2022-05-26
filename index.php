@@ -64,17 +64,10 @@
 <?php
 
     //Fetching data from the database
-    $sql = "SELECT * FROM `products`";
+    $sql = "SELECT * FROM `products` WHERE `size` != 0";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_assoc($result)){
-        if($row['weight'] != 0){
-            $item = new Book($row['sku'], $row['name'], $row['price'], $row['weight']);
-        }else if($row['size'] != 0){
-            $item = new Dvd($row['sku'], $row['name'], $row['price'], $row['size']);
-        }else if($row['height'] != 0){
-            $item = new Furniture($row['sku'], $row['name'], $row['price'],
-             $row['height'], $row['width'], $row['length']);
-        }
+        $item = new Dvd($row['sku'], $row['name'], $row['price'], $row['size']);
         echo "<div class='item'>
             <input class= 'delete-checkbox' type='checkbox'>
             <p class='sku'>" .$item->getSku(). "<p>
@@ -82,7 +75,31 @@
             <p>" .$item->getPrice(). " $<p>
             <p>" .$item->getAttributes(). "<p> </div>";
     }
-    
+
+    $sql = "SELECT * FROM `products` WHERE `weight` != 0";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_assoc($result)){
+        $item = new Book($row['sku'], $row['name'], $row['price'], $row['weight']);
+        echo "<div class='item'>
+            <input class= 'delete-checkbox' type='checkbox'>
+            <p class='sku'>" .$item->getSku(). "<p>
+            <p>" .$item->getName(). "<p>
+            <p>" .$item->getPrice(). " $<p>
+            <p>" .$item->getAttributes(). "<p> </div>";
+    }
+
+    $sql = "SELECT * FROM `products` WHERE `height` != 0";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_assoc($result)){
+        $item = new Furniture($row['sku'], $row['name'], $row['price'],
+             $row['height'], $row['width'], $row['length']);
+        echo "<div class='item'>
+            <input class= 'delete-checkbox' type='checkbox'>
+            <p class='sku'>" .$item->getSku(). "<p>
+            <p>" .$item->getName(). "<p>
+            <p>" .$item->getPrice(). " $<p>
+            <p>" .$item->getAttributes(). "<p> </div>";
+    }
 ?>
     </div>
 
